@@ -496,3 +496,28 @@ main {
   }
   
 }
+
+/* Default styles for larger screens */
+body {
+  font-size: 16px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  /* Add more styles for smaller screens as needed */
+  .nav-links {
+    flex-direction: column; /* Stack navigation links vertically */
+  }
+
+  .main-account {
+    display: none; /* Hide the account details on smaller screens */
+  }
+
+  .main-feed {
+    width: 100%; /* Make the main feed take full width on smaller screens */
+  }
+}
