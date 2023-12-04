@@ -15,6 +15,12 @@ body {
   background-color:  #1d2023;
 }
 
+
+/* Default styles for larger screens */
+body {
+  font-size: 16px;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -453,6 +459,8 @@ main {
   header {
     width: 10px;
     padding: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   main {
@@ -465,7 +473,7 @@ main {
   }
 
   header .tweet-button{
-    width: 55px;
+    width: 300px;
     border-radius: 50%;
     font-size: 1.4rem;
   }
@@ -497,13 +505,9 @@ main {
   
 }
 
-/* Default styles for larger screens */
-body {
-  font-size: 16px;
-}
 
 /* Media query for smaller screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 748px) {
   body {
     font-size: 14px; /* Adjust font size for smaller screens */
   }
@@ -520,4 +524,83 @@ body {
   .main-feed {
     width: 100%; /* Make the main feed take full width on smaller screens */
   }
+
+  
+.follow-details span {
+
+  font-size: 14px;
+  font-weight: 100;
+}
+
+
+}
+
+
+@media screen and (max-width: 748px) {
+  header {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+  }
+
+  main {
+    margin-left: 20%;
+    margin-right: 10px;
+  
+  }
+
+  header span {
+    display: none;
+    width: 100%;
+  }
+
+  header .tweet-button{
+    width: 50%;
+    margin-right: 30px;
+    border-radius: 30%;
+    font-size: 1.4rem;
+  }
+
+  header .main-account{
+    width: 100%;
+  }
+
+  header .main-account i{
+    display: none;
+    width: 100%;
+  }
+
+  header .account-details{
+    display: none;
+    width: 100%;
+  }
+
+  .nav-links {
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links a i {
+    width: 100%;
+  }
+
+  .nav-links a, .main-account a {
+    width: 100%;
+  }
+
+  .side-feed {
+    width: 100%;
+  
+  }
+
+  .feed-tweet-details {
+    width: 100%;
+  
+}
+
+.main-feed {
+  width: 100%;
+  
+}
+
 }
